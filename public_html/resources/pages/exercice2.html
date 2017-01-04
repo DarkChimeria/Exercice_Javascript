@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" href="../css/styles.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="../css/component.css" />
+        <script src="../js/modernizr.custom.js"></script>
+    </head>
+    <body style="overflow : hidden">
+        <header><h1 style="text-align:center">LES VARIABLES</h1></header>
+        <div id="exercice2" style="font-family : Arial">
+            <h1 style="text-align:center"> Découvrons les variables et leur type.</h1>
+            <span id="var0"></span> est de type <span id="typeVar0"></span><br/>
+            <span id="var1"></span> est de type <span id="typeVar1"></span><br/>
+            <span id="var2"></span> est de type <span id="typeVar2"></span><br/>
+            <span id="var3"></span> est de type <span id="typeVar3"></span><br/>
+            <span id="var4"></span> est de type <span id="typeVar4"></span><br/>
+        </div>
+        <script>
+            "use strict";
+
+            var var0;
+            var var1;
+            var var2;
+            var var3;
+            var var4;
+
+            for (var i = 0; i < 5; i++) {
+                document.getElementById("var" + i).innerHTML = eval('var' + i);
+                document.getElementById("typeVar" + i).innerHTML = typeof eval("var" + i);
+            }
+        </script>
+        <script src="../js/classie.js"></script>
+        <script src="../js/gnmenu.js"></script>
+        <script>
+            new gnMenu(document.getElementById('gn-menu'));
+        </script>
+    </body>
+</html>
