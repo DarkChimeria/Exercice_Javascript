@@ -1,8 +1,8 @@
 body {
-  color : white;
+  color : white !important;
   width: 720px;
   margin: 0 auto;
-  background: #2c3e50;
+  background: #2c3e50 !important;
   overflow-y: visible;
 }
 .folds {

@@ -1,69 +1,73 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="resources/css/styles.css"/>
-    <link rel="stylesheet" type="text/css" href="resources/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="resources/css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="resources/css/component.css" />
-    <script src="resources/js/modernizr.custom.js"></script>
-    <script>
-        function loadPage(value) {
-            document.getElementById("page").innerHTML = '<object type="text/html" class="full-width" style="width:100%; height: 80vh; margin-top:5%; margin-left:15%; overflow: hidden !important;" data="resources/pages/' + value + '.html" ></object>';
-        }
-    </script> 
-</head>
-<body>
-    <div class="container, full-width">
-        <ul id="gn-menu" class="gn-menu-main">
-            <li class="gn-trigger">
-                <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
-                <nav class="gn-menu-wrapper">
-                    <div class="gn-scroller">
-                        <ul class="gn-menu">				
-                            <li><a class="gn-icon gn-icon-earth" onclick="loadPage(id);" id="consignes">Accueil</a></li>
-                            <li><a class="gn-icon gn-icon-cog" onclick="loadPage(id);" id="paramètres">Paramètres</a></li
-                            li><a class="gn-icon gn-icon-help" onclick="loadPage(id);" id="consignes">Consignes</a></li
-                            <li><a class="gn-icon gn-icon-article" onclick="loadPage(id);" id="exercice1">Exercice 1</a></li>
-                            <li><a class="gn-icon gn-icon-article" onclick="loadPage(id);" id="exercice2">Exercice 2</a></li>
-                            <li><a class="gn-icon gn-icon-article" onclick="loadPage(id);" id="exercice3">Exercice 3</a></li>
-                            <li><a class="gn-icon gn-icon-article" onclick="loadPage(id);" id="exercice4">Exercice 4</a></li>
-                            <li><a class="gn-icon gn-icon-article" onclick="loadPage(id);" id="exercice5">Exercice 5</a></li>
-                            <li><a class="gn-icon gn-icon-article" onclick="loadPage(id);" id="exercice6">Exercice 6</a></li>
-                            <li><a class="gn-icon gn-icon-article" onclick="loadPage(id);" id="exercice7">Exercice 7</a></li>
-                            <li><a class="gn-icon gn-icon-article" onclick="loadPage(id);" id="exercice8">Exercice 8</a></li>
-                            <li><a class="gn-icon gn-icon-article" onclick="loadPage(id);" id="veille">Veille technologique</a></li>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" href="resources/css/styles.css"/>
+        <link rel="stylesheet" type="text/css" href="resources/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="resources/css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="resources/css/component.css" />
+        <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.css" />
+        
+        <script src="resources/js/modernizr.custom.js"></script>
+        <script src="resources/js/library/jquery-3.1.1.js"></script>
+        <script src="resources/js/library/bootstrap.min.js"></script>
+        <script>
+            function loadPage(value) {
+                document.getElementById("page").innerHTML = '<object type="text/html" class="full-width" style="width:100%; height: 80vh; margin-top:5%; margin-left:15%; overflow: hidden !important;" data="resources/pages/' + value + '.html" ></object>';
+            }
+        </script> 
+    </head>
+    <body>
+        <div class="container, full-width">
+            <ul id="gn-menu" class="gn-menu-main">
+                <li class="gn-trigger">
+                    <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+                    <nav class="gn-menu-wrapper">
+                        <div class="gn-scroller">
+                            <ul class="gn-menu">				
+                                <li><a class="gn-icon gn-icon-earth" onclick="loadPage(id);" id="consignes">Accueil</a></li>
+                                <!--li><a class="gn-icon gn-icon-cog" onclick="loadPage(id);" id="paramètres">Paramètres</a></li-->
+                                <!--li><a class="gn-icon gn-icon-help" onclick="loadPage(id);" id="consignes">Consignes</a></li-->
+                                <li><a class="gn-icon gn-icon-article" onclick="loadPage(id);" id="exercice1">Exercice 1</a></li>
+                                <li><a class="gn-icon gn-icon-article" onclick="loadPage(id);" id="exercice2">Exercice 2</a></li>
+                                <li><a class="gn-icon gn-icon-article" onclick="loadPage(id);" id="exercice3">Exercice 3</a></li>
+                                <li><a class="gn-icon gn-icon-article" onclick="loadPage(id);" id="exercice4">Exercice 4</a></li>
+                                <li><a class="gn-icon gn-icon-article" onclick="loadPage(id);" id="exercice5">Exercice 5</a></li>
+                                <li><a class="gn-icon gn-icon-article" onclick="loadPage(id);" id="exercice6">Exercice 6</a></li>
+                                <li><a class="gn-icon gn-icon-article" onclick="loadPage(id);" id="exercice7">Exercice 7</a></li>
+                                <li><a class="gn-icon gn-icon-article" onclick="loadPage(id);" id="exercice8">Exercice 8</a></li>
+                                <li><a class="gn-icon gn-icon-article" onclick="loadPage(id);" id="veille">Veille technologique</a></li>
+                            </ul>
+                        </div><!-- /gn-scroller -->
+                    </nav>
+                </li>
+                EXERCICES DE JAVASCRIPT
+                <li><a href="http://www.indre.cci.fr/formation"><img style="display: block; height: 100%; float:left; margin-right:10px;" src="resources/img/campus-centre.png"> <span style="vertical-align:middle">DISII 2016</span></a></li>
+            </ul>
+            <br>
+            <br>
+            <div id="page" style="overflow:hidden !important;">
+                <div id="consignes" style="width:100%; margin:5%">
+                    <div style="display: block; height: 100%; float:left; width:60%; margin-right:5%">
+                        Nous allons faire tous nos exercices de Javascript via ce projet. <br>
+                        Le but de ce projet est de réviser les principes de versionning, d'écrire nos premières lignes de JS et surtout d'aller fouiller dans du code.<br>
+                        <br>
+                        Le but est aussi de faire un projet à votre image. Si vous souhaitez que le fond soit rose, n'hésitez pas.<br>
+                        Les seules consignes à respecter sont :<br>
+                        <ul>
+                            <li>Laisser le fond des exercices en l'état. Vous pouvez modifier la forme telle que les photos, css..</li>
+                            <li>Commiter sur votre repository à la fin de chaque cours de Javascript même si l'exercice n'est pas fini.</li>
+                            <li>Finir l'exercice en cours chez vous si vous n'avez pas eu le temps de le finir dans le temps imparti. Ces exercices constitueront une partie de la note de TP.</li>
                         </ul>
-                    </div><!-- /gn-scroller -->
-                </nav>
-            </li>
-            EXERCICES DE JAVASCRIPT
-            <li><a href="http://www.indre.cci.fr/formation"><img style="display: block; height: 100%; float:left; margin-right:10px;" src="resources/img/campus-centre.png"> <span style="vertical-align:middle">DISII 2016</span></a></li>
-        </ul>
-        <br>
-        <br>
-        <div id="page" style="overflow:hidden !important;">
-            <div id="consignes" style="width:100%; margin:5%">
-                <div style="display: block; height: 100%; float:left; width:60%; margin-right:5%">
-                    Nous allons faire tous nos exercices de Javascript via ce projet. <br>
-                    Le but de ce projet est de réviser les principes de versionning, d'écrire nos premières lignes de JS et surtout d'aller fouiller dans du code.<br>
-                    <br>
-                    Le but est aussi de faire un projet à votre image. Si vous souhaitez que le fond soit rose, n'hésitez pas.<br>
-                    Les seules consignes à respecter sont :<br>
-                    <ul>
-                        <li>Laisser le fond des exercices en l'état. Vous pouvez modifier la forme telle que les photos, css..</li>
-                        <li>Commiter sur votre repository à la fin de chaque cours de Javascript même si l'exercice n'est pas fini.</li>
-                        <li>Finir l'exercice en cours chez vous si vous n'avez pas eu le temps de le finir dans le temps imparti. Ces exercices constitueront une partie de la note de TP.</li>
-                    </ul>
+                    </div>
+                    <div style="display: block; height: 100%; width:15%; float:left; margin-right:5%;">  <img src="resources/img/java_js.png"></div>
                 </div>
-                <div style="display: block; height: 100%; width:15%; float:left; margin-right:5%;">  <img src="resources/img/java_js.png"></div>
             </div>
-        </div>
-    </div> <!-- /container -->
-    <script src="resources/js/classie.js"></script>
-    <script src="resources/js/gnmenu.js"></script>
-    <script>
-        new gnMenu(document.getElementById('gn-menu'));
-    </script>
-</body>
+        </div> <!-- /container -->
+        <script src="resources/js/classie.js"></script>
+        <script src="resources/js/gnmenu.js"></script>
+        <script>
+                                    new gnMenu(document.getElementById('gn-menu'));
+        </script>
+    </body>
 </html>
