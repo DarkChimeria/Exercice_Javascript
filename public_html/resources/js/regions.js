@@ -12,15 +12,51 @@ function get(department){
     var region = "";
     var error = null;
     
-   
-if (department == "Aisne" || department == "Nord" || department == "Oise" || department == "Pas-de-Calais" || department == "Somme"){
-region = "Hauts-de-France";
-}
-
-else{
-
-    error;
-}
+    if (){
+        
+    }
+    else if (){
+        
+    }
+    else if (){
+        
+    }
+    else if (){
+        
+    }
+    else if (){
+    
+    }
+    else if (){
+    
+    }
+    else if (){
+    
+    }
+    else if (){
+    
+    }
+    else if (){
+    
+    }
+    else if (){
+    
+    }
+    else if (){
+    
+    }
+    else if (){
+    
+    }
+    else if (){
+    
+    }
+    else if (){
+    
+    }
+    else {
+        error;
+    }
 
     var resultOK = "Vous résidez dans la région " + region + ".";
         ?  document.getElementById("resultat").innerHTML = resultOK: error;
