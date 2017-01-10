@@ -12,51 +12,15 @@ function get(department){
     var region = "";
     var error = null;
     
-    if (d="Ain"){
-        alert("test")
-    }
-    else if (){
-        
-    }
-    else if (){
-        
-    }
-    else if (){
-        
-    }
-    else if (){
-    
-    }
-    else if (){
-    
-    }
-    else if (){
-    
-    }
-    else if (){
-    
-    }
-    else if (){
-    
-    }
-    else if (){
-    
-    }
-    else if (){
-    
-    }
-    else if (){
-    
-    }
-    else if (){
-    
-    }
-    else if (){
-    
-    }
-    else {
-        error;
-    }
+   
+if (department == "Aisne" || department == "Nord" || department == "Oise" || department == "Pas-de-Calais" || department == "Somme"){
+region = "Hauts-de-France";
+}
+
+else{
+
+    error;
+}
 
     var resultOK = "Vous résidez dans la région " + region + ".";
         ?  document.getElementById("resultat").innerHTML = resultOK: error;
