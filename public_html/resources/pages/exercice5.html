@@ -30,21 +30,24 @@
             <span style="margin-left:20px;">Dites-moi quel âge vous avez</span><br/>
             <span style="margin-left:20px;">et je vous dirai qui vous êtes.</span><br/> 
             <br/>
-            <input id="age" style="margin-left:20px;" type="text" onChange="giveFeature(value)" value=""></input>
+            <form>
+                <input id="age" style="margin-left:20px;" type="text" onChange="giveFeature(value)" value=""></input><br />
+                <input id="genre1" style="margin-left:20px;" name="genre" type="radio" onClick="giveFeature(value)" value="homme">Homme</input><br />
+                <input id="genre2" style="margin-left:20px;" name="genre" type="radio" onClick="giveFeature(value)" value="femme">Femme</input><br />
+                <input id="genre3" style="margin-left:20px;" name="genre" type="radio" onClick="giveFeature(value)" value="Autre">Autre</input><br />
+            </form>
             <br/>
             <br/>
             <div id="resultatage"></div>
         </div>
     </div>
     <img id="deMorgan" src="../img/tableau-produit-logique.png" style="width:100%;">
-
-
-<script src="../js/age.js"></script>
-<script src="../js/regions.js"></script>
-<script src="../js/classie.js"></script>
-<script src="../js/gnmenu.js"></script>
-<script>
-    new gnMenu(document.getElementById('gn-menu'));
-</script>
+    <script src="../js/age.js"></script>
+    <script src="../js/regions.js"></script>
+    <script src="../js/classie.js"></script>
+    <script src="../js/gnmenu.js"></script>
+    <script>
+        new gnMenu(document.getElementById('gn-menu'));
+    </script>
 </body>
 </html>
